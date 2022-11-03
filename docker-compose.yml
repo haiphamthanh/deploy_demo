@@ -16,6 +16,12 @@ services:
     hostname: web2
     ports:
       - '82:5000'
+  web3:
+    restart: on-failure
+    build: ./web
+    hostname: web3
+    ports:
+      - '83:5000'
   nginx:
     build: ./nginx
     ports:
@@ -23,5 +29,6 @@ services:
     depends_on:
     - web1
     - web2
+    - web3
 
 
