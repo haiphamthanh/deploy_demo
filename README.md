@@ -107,3 +107,8 @@ web2: Total number of visits is: 3
 $ docker-compose down
 ```
 
+## Run docker commpose
+
+```
+$ docker-compose down && docker-compose build --no-cache && docker-compose up
+```
